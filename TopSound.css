@@ -1,0 +1,362 @@
+/* Top Sound Style */
+
+body, html {
+    margin: 0;
+    background-color: #444751;
+    font-family: arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/* heading styles */
+
+h1{
+    font-size: 6.25rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4.68rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3.125rem;
+}
+
+h4 {
+    font-size: 1.5625rem;
+}
+
+/* Headings */
+#homeHeadingImage {
+    background-image: url("https://pm1.narvii.com/6523/f1d02b8d50f40dc8332e85d2c300b18d2d75f37e_hq.jpg");
+    background-color: blue;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+
+}
+
+#homeHeadingImage h1 {
+    font-style: italic;
+    font-size: 3.5rem;
+}
+    
+@media(min-width: 40rem) {
+
+    #homeHeadingImage {
+        height: 43rem;
+    }
+
+    #homeHeadingImage h1 {
+        font-size: 10.0rem;
+    }
+
+}
+
+
+/* Paragraph Styles */
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    line-height: 2;
+}
+
+/* List Styles */
+
+.navBlocks1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.navBlock1 {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.navBlock1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.3rem 0;
+}
+
+.navBlock1 a:hover, 
+.navBlock1 a:active {
+    color: #B9BBB8;
+    border-bottom: 0.125rem solid #B9BBB8;
+}
+
+.navBlock1Current a {
+    color: white;
+    background: black;
+    padding: 0.425rem 0.925rem;
+    border-radius: 0.425rem;
+}
+
+.navBlock1Current a:hover, 
+.navBlock1Current a:active {
+    color: black;
+    background: white;
+    border: none;
+}
+
+.overviewButtons{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.overviewButton{
+    padding: 0.3rem;
+    margin: 0.5rem;
+}
+
+.overviewButton a{
+    background-color: #B9BBB8;
+    padding: 0.3rem 0;
+    margin: 0rem;
+    width: 100%;
+}
+
+.overviewButton a:hover, 
+.overviewButton a:active {
+    color: white;
+    border-bottom: 0.125rem solid #B9BBB8;
+}
+
+/*Center Position*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+
+
+/* Different Div Containers */
+
+.darkContainer {
+    display: inline-block;
+    background-color:#444751;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height:auto;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.lightContainer {
+    display: inline-block;
+    background-color: #B9BBB8;
+    color: white;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0rem;
+    padding: 2rem 0rem;
+}
+
+.productContainer {
+    background-color: white;
+    width: 50%;
+    height: 10rem;
+    padding: 1.0rem;
+    text-align: center;
+    margin: 2rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 40rem) {
+    .flexContainer {
+        flex-direction: row;
+    }
+}
+
+
+.productName {
+    color: black;
+    font-size: 0.325rem;
+    background-color: white;
+    padding: 0.425rem 0.5rem;
+    text-decoration: none;
+}
+/* Buttons */
+.priceButton {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #444751;
+    margin: 0rem;
+    padding: .0625 0rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 40rem){
+    .productContainer{
+        display: inline-block;
+        align-content: inherit;
+        width: auto;
+        height: 23.5rem;
+        margin: 0.5rem;
+        vertical-align: middle;
+        min-width: 13rem;
+    }
+
+    .productName {
+        font-size: 1rem;
+        padding: 0.875rem 1rem;
+    }
+
+    .priceButton {
+        display: inline-block;
+        height: .625rem;
+        margin: 0.3125rem 0rem;
+        padding: 0.0624rem 0rem;
+        font-size: .625rem;
+    }
+}
+
+
+
+/* Images */
+
+.productImages {
+    width: 6.125rem;
+    height: 7.125rem;
+    margin: 0.125rem;
+    display: inline-block;
+
+}
+
+@media(min-width: 40rem) {
+
+    .productImages {
+        width: 12.5rem;
+        height: 18.75rem;
+        margin: 0.3125rem;
+    }
+
+
+}
+
+/* VIP FORM */
+
+.vipForm{ 
+    padding: 1rem;
+}
+
+.vipForm label,
+.vipForm input,
+.vipForm select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.vipForm input[id*="email-updates"] {
+    display: inline-block;
+    width: auto;
+}
+
+.vipForm input[id*="comments"] {
+    height: 5rem;
+}
+
+.vipForm input,
+.vipForm select {
+    border: 1px solid white;
+    padding: 0.2rem 0.5rem; 
+    font: inherit;
+
+}
+
+.vipForm input:focus,
+.vipForm select:focus {
+    outline: none;
+    background: #444751;
+    border-color: black;
+
+}
+
+.vipForm button[type="submit"] {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 40rem) {
+    .vipForm {
+        margin: auto;
+        width: 20rem;
+    }
+}
+
+/* Footer */
+
+.topSoundFooter {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.footerItem {
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.footerItem a {
+    text-decoration: none;
+    color: #B9BBB8;
+    font-weight: bold;
+    padding: 0.3rem 0;
+}
+
+.footerLogo {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.3rem 0;
+}
